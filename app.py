@@ -27,7 +27,7 @@ from courses import ds_course,web_course,android_course,ios_course,uiux_course,r
 import plotly.express as px #to create visualisations at the admin session
 import nltk
 
-#nltk.data.path.append('/Users/naziahussain/nltk_data')  
+ 
 
 
 
@@ -133,7 +133,7 @@ def run():
     st.sidebar.markdown("# Choose User")
     activities = ["User", "Admin"]
     choice = st.sidebar.selectbox("Choose among the given options:", activities)
-    link = '[©Developed by nazia](https://www.linkedin.com/in/mrbriit/)'
+    link = '[©Developed by Khushi](linkedin.com/in/khushi-kushwah-396008286)'
     st.sidebar.markdown(link, unsafe_allow_html=True)
 
 
@@ -372,8 +372,8 @@ def run():
         ad_user = st.text_input("Username")
         ad_password = st.text_input("Password", type='password')
         if st.button('Login'):
-            if ad_user == 'nazia' and ad_password == 'nazia123':
-                st.success("Welcome nazia !")
+            if ad_user == 'khushi' and ad_password == 'khushi987':
+                st.success("Welcome Khushi !")
                 # Display Data
                 cursor.execute('''SELECT*FROM user_data''')
                 data = cursor.fetchall()
